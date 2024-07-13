@@ -1,0 +1,33 @@
+.mi_lista{
+    list-style-type: none;
+}
+
+.section{
+    background-color: chartreuse;
+}
+
+.article_2{
+    background-color: rgba(28, 181, 237, 0.6);
+}
+
+.span{
+    background-color: blue;
+}
+
+.div{
+    background-color: blueviolet;
+}
+
+.header{
+    font-size: 50px;
+}
+
+.container{
+    font-style: italic;
+    background-color: white;
+}
+
+p{
+    cursor:pointer;
+}
+

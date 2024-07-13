@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de linea y bloque</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!--Elementos de linea y elementos de bloque-->
+    <p><span class="span">Lorem ipsum</span> dolor <em>sit</em>  amet consectetur, adipisicing elit. Hic eius iure placeat, 
+        iusto aspernatur sequi unde itaque alias doloremque <b>quaerat</b> officiis ut <u>quam amet</u> qui, perspiciatis i
+        llum labore. Nam, eum! Lorem ipsum dolor sit amet, consectetur <sup>3</sup> <sub>4</sub> adipisicing elit. Enim velit nihil iusto! Quae ab blanditiis excepturi optio, soluta libero dolores recusandae quod ea amet? Delectus quidem deserunt numquam iusto quaerat.</p>
+
+    <div class="div">
+        <div class="header">Título del bloque</div>
+        <p>Esto es un párrafo denotr de un div</p>
+        <div class="container">Otro bloque div</div>
+        <p>Un párrafo más</p>
+    </div>
+
+    <!--Datasets-->
+    <p id="parrafo" data-midato="Este dato pertenece al dataset del parrafo p con id parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem culpa atque dicta voluptat
+        e nulla, nihil omnis sequi soluta adipisci quisquam hic nam recusandae ipsa laboriosam? Similique at
+         asperiores modi ipsum?</p>
+
+    <span>
+        <a href="pagina.html"  target="_blank">Vete a pagina.html</a>
+    </span>
+
+
+
+
+
+
+    <script>
+        const parrafo = document.getElementById("parrafo");
+        console.log(parrafo.dataset.midato);
+
+    function getRandomColor() {
+        let letters = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+        parrafo.addEventListener("click", function(event) {
+            parrafo.style.backgroundColor = getRandomColor();
+        });
+    </script>
+
+</body>
+</html>
