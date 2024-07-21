@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+    <form action="" method="post">
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre">
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" name="fecha" id="fecha">
+
+        <label for="correo">correo electrónico: </label>
+        <input type="email" name="correo">
+
+        <label for="numero">Números</label>
+        <input type="number" id="numero" name="numero">
+
+        <label for="contra">Contraseña: </label>
+        <input type="password" name="contra" id="">
+
+        <input type="range" step="1" min="0" max="1000">
+
+        <input type="submit" value="Enviar el formulario">
+        <button type="reset">Resetear</button>
+    </form>
+</body>
+</html>
